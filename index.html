@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funky Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-screen">
+    <h1>Welcome to the Quiz!</h1>
+    <label for="username">Enter Your Name:</label>
+    <input type="text" id="username" placeholder="Your Name">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container" style="display:none;">
+    <h2 id="question-text"></h2>
+    <div id="options-container"></div>
+    <div id="feedback-container"></div>
+    <button id="next-button" onclick="nextQuestion()" style="display: none;">Next</button>
+    <div id="score-container"></div>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <div id="result-screen" style="display:none;">
+    <h2>Your Score: <span id="final-score"></span></h2>
+    <h3 id="result-text"></h3>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
